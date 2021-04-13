@@ -3,7 +3,7 @@
 	"git.alwaysShowStagedChangesResourceGroup": true,
 	"git.path": "C:\\Program Files\\Git\\bin\\git.exe",
 	"git.autofetch": true,
-	"editor.fontSize": 22,
+	"editor.fontSize": 18,
 	"editor.suggestFontSize": 16,
 	// "editor.detectIndentation": false,
 	// "editor.foldingStrategy": "indentation",
