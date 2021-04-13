@@ -27,10 +27,7 @@
                         </nuxt-link>
                     </li>
                     <li class="nav-item">
-                        <!-- <a class="nav-link" href="">Sign up</a> -->
-                        <nuxt-link class="nav-link" to="Register">
-                           Sign up
-                        </nuxt-link>
+                        <a class="nav-link" href="">Sign up</a>
                     </li>
                 </ul>
             </div>

@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/changguoli/nuxt#readme",
   "dependencies": {
-    "nuxt": "^2.15.4"
+    "cheerio": "^1.0.0-rc.6",
+    "nuxt": "^2.15.4",
+    "vue-meta": "^2.4.0"
   }
 }

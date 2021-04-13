@@ -22,15 +22,12 @@
                         <!-- <a class="nav-link" href="">
                             <i class="ion-gear-a"></i>&nbsp;Settings
                         </a> -->
-						 <nuxt-link class="nav-link" to="Settings">
+						 <nuxt-link class="nav-link" to="editor">
                            <i class="ion-gear-a"></i>&nbsp;Settings
                         </nuxt-link>
                     </li>
                     <li class="nav-item">
-                        <!-- <a class="nav-link" href="">Sign up</a> -->
-                        <nuxt-link class="nav-link" to="Register">
-                           Sign up
-                        </nuxt-link>
+                        <a class="nav-link" href="">Sign up</a>
                     </li>
                 </ul>
             </div>

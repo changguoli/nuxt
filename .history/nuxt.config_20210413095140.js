@@ -1,15 +1,26 @@
 /**
  * Nuxt.js 配置文件
  */
+import VueMeta from 'vue-meta'
+
+const { generate } = VueMeta
+const rawMetaInfo = {
+    meta: [{ charset: 'utf-8' }]
+  }
+  
+const metaInfo = generate(rawMetaInfo /*, yourOptions*/)
+const HEAD = metaInfo.script.text() + metaInfo.meta.text()
 
 module.exports = {
-    head: {
-        meta: [
-          { charset: 'utf-8' },
-          { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-          { name: 'hahah', content: 'width=device-width, initial-scale=1222' }
-        ]
-      },
+    // hooks: {
+    //     'render:route': (url, result) => {
+    //         console.log('1111',url, '22222', result)
+    //         //    this.$ = cheerio.load(result.html,{decodeEntities: false});
+    //         //    this.$(`meta`).removeAttr('data-n-head');
+    //         //    result.html = this.$.html()
+    //        }
+    //    },
+    head:HEAD,
     router: {
         // 自定义路由表规则
         extendRoutes(routes, resolve) {

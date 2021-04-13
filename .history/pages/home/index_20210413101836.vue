@@ -90,9 +90,6 @@
 // Vue.use(Meta)
 export default {
     name: 'HomeIndex',
-    render: (h) => {
-      console.log('66666', h)
-    },
     head(e) {
       console.log('3333', e)
       return {

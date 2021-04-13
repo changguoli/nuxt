@@ -1,15 +1,7 @@
 /**
  * Nuxt.js 配置文件
  */
-
 module.exports = {
-    head: {
-        meta: [
-          { charset: 'utf-8' },
-          { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-          { name: 'hahah', content: 'width=device-width, initial-scale=1222' }
-        ]
-      },
     router: {
         // 自定义路由表规则
         extendRoutes(routes, resolve) {

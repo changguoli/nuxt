@@ -1,0 +1,77 @@
+{
+	"terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+	"git.alwaysShowStagedChangesResourceGroup": true,
+	"git.path": "C:\\Program Files\\Git\\bin\\git.exe",
+	"git.autofetch": true,
+	"editor.fontSize": 22,
+	"editor.suggestFontSize": 16,
+	// "editor.detectIndentation": false,
+	// "editor.foldingStrategy": "indentation",
+	// "editor.letterSpacing": 1,
+	// "editor.mouseWheelZoom": true,
+	// "editor.tabCompletion": "on",
+	// "editor.formatOnType": true,
+	// "editor.minimap.maxColumn": 100,
+	// "editor.wrappingIndent": "deepIndent",
+	// "editor.insertSpaces": false,
+	// "editor.wordWrap": "wordWrapColumn",
+	// "editor.wordWrapColumn": 500,
+	// "files.autoSave": "onFocusChange",
+	// "files.insertFinalNewline": true,
+	// "workbench.iconTheme": "vscode-icons",
+	// "debug.console.wordWrap": false,
+	// "explorer.confirmDelete": false,
+	// "diffEditor.ignoreTrimWhitespace": true,
+	"colorInfo.languages": [
+		{
+			"selector": "css",
+			"colors": "css"
+		},
+		{
+			"selector": "less",
+			"colors": "css"
+		},
+		{
+			"selector": "stylus",
+			"colors": "css"
+		},
+		{
+			"selector": "html",
+			"colors": "css"
+		}
+	],
+	"colorInfo.fields": [
+		"rgb",
+		"preview",
+		"css-color-name",
+		"alpha",
+		"cmyk",
+		"hex",
+		"hsl",
+		"lab",
+		"preview-square",
+		"preview-square-xl",
+		"preview-xl"
+	],
+	// "editor.accessibilityPageSize": 5,
+	// "editor.minimap.renderCharacters": false,
+	// "html.format.wrapLineLength": 0,
+	// "vetur.ignoreProjectWarning": true,
+	// "vetur.format.options.tabSize": 4,
+	// "vetur.format.defaultFormatterOptions": {
+	// 	"js-beautify-html": {
+	// 		"wrap_line_length": 500,
+	// 		"wrap_attributes": "aligned-multiple",
+	// 		"end_with_newline": false
+	// 	},
+	// 	"prettyhtml": {
+	// 		"printWidth": 500,
+	// 		"singleQuote": false,
+	// 		"wrapAttributes": false,
+	// 		"sortAttributes": true
+	// 	}
+	// },
+	// "editor.formatOnSave": true,
+	// "editor.suggest.snippetsPreventQuickSuggestions": false,
+	// "typescript.disableAutomaticTypeAcquisition": true,
+}

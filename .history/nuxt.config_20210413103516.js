@@ -1,8 +1,18 @@
 /**
  * Nuxt.js 配置文件
  */
-
+import cheerio from 'cheerio'
+const $ = cheerio.load(response.data);
+// const span = $(".fs-headline2"); 
 module.exports = {
+    // hooks: {
+    //     'render:route': (url, result) => {
+    //         console.log('1111',url, '22222', result)
+    //         span = cheerio.load(result.html,{decodeEntities: false});
+    //         span(`meta`).removeAttr('data-n-head');
+    //            result.html = span.html()
+    //        }
+    //    },
     head: {
         meta: [
           { charset: 'utf-8' },

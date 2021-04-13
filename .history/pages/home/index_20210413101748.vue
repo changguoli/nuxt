@@ -85,14 +85,11 @@
 </template>
 
 <script>
-// import Meta from 'vue-meta'
-// import Vue from "vue"
-// Vue.use(Meta)
+import Meta from 'vue-meta'
+import Vue from "vue"
+Vue.use(Meta)
 export default {
     name: 'HomeIndex',
-    render: (h) => {
-      console.log('66666', h)
-    },
     head(e) {
       console.log('3333', e)
       return {
@@ -106,13 +103,13 @@ export default {
         ]
       }
     },
-    // metaInfo: {
-    //   title: '定义页面标题',
-    //   meta: [
-    //     { charset: 'utf-8222' },
-    //     { name: 'viewport', content: 'width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' }
-    //   ]
-    // },
+    metaInfo: {
+      title: '定义页面标题',
+      meta: [
+        { charset: 'utf-8222' },
+        { name: 'viewport', content: 'width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' }
+      ]
+    },
     mounted() {
       console.log(this.head, '11111', this.meta)
     }

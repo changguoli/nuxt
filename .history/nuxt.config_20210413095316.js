@@ -1,8 +1,16 @@
 /**
  * Nuxt.js 配置文件
  */
-
+// import cheerio from 'cheerio'
 module.exports = {
+    // hooks: {
+    //     'render:route': (url, result) => {
+    //         console.log('1111',url, '22222', result)
+    //            this.$ = cheerio.load(result.html,{decodeEntities: false});
+    //            this.$(`meta`).removeAttr('data-n-head');
+    //            result.html = this.$.html()
+    //        }
+    //    },
     head: {
         meta: [
           { charset: 'utf-8' },

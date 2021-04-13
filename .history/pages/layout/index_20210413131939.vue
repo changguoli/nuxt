@@ -8,10 +8,11 @@
                     <li class="nav-item">
                         <!-- Add "active" class when you're on that page" -->
                         <!-- <a class="nav-link active" href="">Home</a> -->
-                        <nuxt-link class="nav-link active" to="/">Home</nuxt-link>
+                        <nuxt-link class="nav-link active" to="/"
+                            >Home</nuxt-link>
                     </li>
                     <li class="nav-item">
-                        <nuxt-link class="nav-link" to="editor">
+                        <nuxt-link class="nav-link" to="settings">
                             <i class="ion-compose"></i>&nbsp;New Post
                         </nuxt-link>
                         <!-- <a class="nav-link" href="">
@@ -19,18 +20,12 @@
             </a> -->
                     </li>
                     <li class="nav-item">
-                        <!-- <a class="nav-link" href="">
+                        <a class="nav-link" href="">
                             <i class="ion-gear-a"></i>&nbsp;Settings
-                        </a> -->
-						 <nuxt-link class="nav-link" to="Settings">
-                           <i class="ion-gear-a"></i>&nbsp;Settings
-                        </nuxt-link>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <!-- <a class="nav-link" href="">Sign up</a> -->
-                        <nuxt-link class="nav-link" to="Register">
-                           Sign up
-                        </nuxt-link>
+                        <a class="nav-link" href="">Sign up</a>
                     </li>
                 </ul>
             </div>
