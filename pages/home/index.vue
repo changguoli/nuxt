@@ -93,19 +93,19 @@ export default {
     render: (h) => {
       console.log('66666', h)
     },
-    head(e) {
-      console.log('3333', e)
-      return {
-        title: this.title,
-        meta:  [
-          {
-            hid: 'description',
-            name: 'description',
-            content: 'My custom description',
-          }
-        ]
-      }
-    },
+    // head(e) {
+    //   console.log('3333', e)
+    //   return {
+    //     title: this.title,
+    //     meta:  [
+    //       {
+    //         hid: 'description',
+    //         name: 'description',
+    //         content: 'My custom description',
+    //       }
+    //     ]
+    //   }
+    // },
     // metaInfo: {
     //   title: '定义页面标题',
     //   meta: [

@@ -11,18 +11,23 @@
         </p>
 
         <ul class="error-messages">
-          <li>That email is already taken</li>
+          <template v-for="(meesages, field) in errors">
+            <li v-for="(message, index) in meesages"
+            :key="index">
+              {{field}} {{message}}
+            </li>
+          </template>
         </ul>
 
         <form @submit.prevent="onSubmit">
           <fieldset v-if="!isLogin" class="form-group">
-            <input class="form-control form-control-lg" type="text" placeholder="Your Name" required>
+            <input v-model="user.username" class="form-control form-control-lg" type="text" placeholder="Your Name" required>
           </fieldset>
           <fieldset class="form-group">
             <input v-model="user.email" type="email" class="form-control form-control-lg" placeholder="Email" required>
           </fieldset>
           <fieldset class="form-group">
-            <input v-model="user.password" class="form-control form-control-lg" type="password" placeholder="Password" required>
+            <input v-model="user.password" minlength="8" class="form-control form-control-lg" type="password" placeholder="Password" required>
           </fieldset>
           <button class="btn btn-lg btn-primary pull-xs-right">
             {{ isLogin ? 'Sign in' : 'Sign up'}}
@@ -36,27 +41,47 @@
 </template>
 
 <script>
-import { login } from '@/api/user'
+import { login, register } from '@/api/user'
+// 仅在客户端加载 js-cookie 包
+const Cookie = process.client ? require('js-cookie') : undefined
 export default {
+    middleware: 'notAuthenticated',
+    // middleware: 'authenticated',
     name: 'LoginIndex',
     data() {
       return {
         user: {
+          username: '',
           email: '',
           password: ''
-        }
+        },
+        errors: {}
       }
     },
     methods: {
       async onSubmit() {
-        const { data } = await login({
+        try {
+          const { data } = this.isLogin ?
+          await login({
             user: this.user
-        })
-        console.log(data, '11')
+          })
+          : await register({
+            user: this.user
+          })
         // 保存用户的登录状态
+        this.$store.commit('setUser', data.user)
 
+        // 为了防止刷新页面数据丢失， 我们需要把数据持久化
+        Cookie.set('user', data.user)
+        console.log(data, '11', this.$store)
         // 跳转到首页
         this.$router.push('/')
+        } catch (err) {
+          console.dir(err)
+          this.errors = err.response.data.errors
+        }
+        
+       
       }
     },
     computed: {

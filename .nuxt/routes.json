@@ -6,38 +6,46 @@
       {
         "path": "",
         "name": "home",
-        "component": "E:\\\\拉钩教育\\\\练习-demo\\\\realworld-nuxtjs\\\\pages\\\\home"
+        "component": "E:\\\\拉钩教育\\\\练习-demo\\\\realworld-nuxtjs\\\\pages\\\\home",
+        "_name": "_7b3ba6af"
       },
       {
         "path": "/login",
         "name": "login",
-        "component": "E:\\\\拉钩教育\\\\练习-demo\\\\realworld-nuxtjs\\\\pages\\\\login"
+        "component": "E:\\\\拉钩教育\\\\练习-demo\\\\realworld-nuxtjs\\\\pages\\\\login",
+        "_name": "_271d10ce"
       },
       {
         "path": "/register",
         "name": "register",
-        "component": "E:\\\\拉钩教育\\\\练习-demo\\\\realworld-nuxtjs\\\\pages\\\\login"
+        "component": "E:\\\\拉钩教育\\\\练习-demo\\\\realworld-nuxtjs\\\\pages\\\\login",
+        "_name": "_271d10ce"
       },
       {
         "path": "/profile/:username",
         "name": "profile",
-        "component": "E:\\\\拉钩教育\\\\练习-demo\\\\realworld-nuxtjs\\\\pages\\\\profile"
+        "component": "E:\\\\拉钩教育\\\\练习-demo\\\\realworld-nuxtjs\\\\pages\\\\profile",
+        "_name": "_6f18c5d9"
       },
       {
         "path": "/settings",
         "name": "settings",
-        "component": "E:\\\\拉钩教育\\\\练习-demo\\\\realworld-nuxtjs\\\\pages\\\\settings"
+        "component": "E:\\\\拉钩教育\\\\练习-demo\\\\realworld-nuxtjs\\\\pages\\\\settings",
+        "_name": "_054005f3"
       },
       {
         "path": "/editor",
         "name": "editor",
-        "component": "E:\\\\拉钩教育\\\\练习-demo\\\\realworld-nuxtjs\\\\pages\\\\editor"
+        "component": "E:\\\\拉钩教育\\\\练习-demo\\\\realworld-nuxtjs\\\\pages\\\\editor",
+        "_name": "_d59cc186"
       },
       {
         "path": "/article/:slug",
         "name": "article",
-        "component": "E:\\\\拉钩教育\\\\练习-demo\\\\realworld-nuxtjs\\\\pages\\\\article"
+        "component": "E:\\\\拉钩教育\\\\练习-demo\\\\realworld-nuxtjs\\\\pages\\\\article",
+        "_name": "_55e30926"
       }
-    ]
+    ],
+    "_name": "_bdff0e0c"
   }
 ]
